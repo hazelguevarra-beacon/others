@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Office Beacon</title>
+<style>
+  body {
+    font-family: "Segoe UI", sans-serif;
+    margin: 0;
+    overflow-x: hidden;
+    background: linear-gradient(135deg, #004aad, #b6a0d6, #fdbd34);
+    background-size: 400% 400%;
+    animation: gradientMove 10s ease infinite;
+    color: #fff;
+  }
+
+  @keyframes gradientMove {
+    0% {background-position: 0% 50%;}
+    50% {background-position: 100% 50%;}
+    100% {background-position: 0% 50%;}
+  }
+
+  header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 10px;
+    background: #00000080; /* Semi-transparent black so logo is visible */
+  }
+
+  header img {
+    height: 100px;
+    display: block;
+  }
+
+  main {
+    position: relative;
+    z-index: 2;
+    max-width: 900px;
+    margin: 30px auto 50px auto;
+    border-radius: 20px;
+    padding: 30px 40px;
+    text-align: center;
+  }
+
+  .forms-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 25px;
+  }
+
+  .form-card {
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    padding: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    backdrop-filter: blur(8px);
+  }
+
+  .form-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 8px 20px rgba(255, 255, 255, 0.25);
+  }
+
+  .form-card h3 {
+    color: #fff;
+    margin-top: 0;
+    font-size: 1.1rem;
+  }
+
+  .form-card p {
+    color: #f0f0f0;
+    font-size: 0.9rem;
+    margin-bottom: 15px;
+  }
+
+  .form-card a {
+    display: inline-block;
+    padding: 8px 14px;
+    background-color: #FDBE34;
+    color: #004aad;
+    font-weight: 600;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: background 0.3s, transform 0.3s;
+  }
+
+  .form-card a:hover {
+    background-color: #e6ad2f;
+    transform: scale(1.05);
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <img src="https://i.imgur.com/d2BCvGL.png" alt="Office Beacon Logo">
+</header>
+
+<main>
+  <div class="forms-grid">
+    <div class="form-card">
+      <h3>Typing Test Practice</h3>
+      <p>Practice your typing skills using a simple online typing test.</p>
+      <a href="https://www.typingtest.com/practice.php" target="_blank">Open Typing Test</a>
+    </div>
+  </div>
+</main>
+
+</body>
+</html>
