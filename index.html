@@ -57,6 +57,8 @@
     padding: 20px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     backdrop-filter: blur(8px);
+    cursor: pointer;
+    text-align: center;
   }
 
   .form-card:hover {
@@ -101,11 +103,22 @@
 
 <main>
   <div class="forms-grid">
+
+    <!-- Example existing card (Typing Test) -->
     <div class="form-card">
-      <h3>Typing Test Practice</h3>
-      <p>Practice your typing skills using a simple online typing test.</p>
-      <a href="https://www.typingtest.com/practice.php" target="_blank">Open Typing Test</a>
+      <h3>Typing Test</h3>
+      <p>Practice your typing speed and accuracy.</p>
+      <a href="#">Start Test</a>
     </div>
+
+    <!-- NEW Time Log Card -->
+    <div class="form-card" onclick="window.open('https://script.google.com/macros/s/AKfycbyxYIf5CCG9P9ztfoa_JRz3VjOdtAr2QoeuPacdrfw5127g3nM_UCg8jWymf_x7Ypq9jw/exec', '_blank')">
+      <img src="https://i.imgur.com/d2BCvGL.png" alt="Time Log" style="height:60px; margin-bottom:10px;">
+      <h3>Time Log</h3>
+      <p>Click to open the time log form.</p>
+      <a href="javascript:void(0);">Open Time Log</a>
+    </div>
+
   </div>
 </main>
 
